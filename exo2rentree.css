@@ -1,0 +1,13 @@
+form {
+    background-color: gray;
+    border-radius: 6px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 20px;
+}
+
