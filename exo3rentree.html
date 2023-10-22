@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste de tâches</title>
+    <link rel="stylesheet" type="text/css" href="exo3rentree.css">
+</head>
+<body>
+    <h1>Liste de tâches</h1>
+    <ul id="liste-taches">
+        <li>Tâche 1</li>
+        <li>Tâche 2</li>
+        <li>Tâche 3</li>
+    </ul>
+    <input type="text" id="nouvelle-tache" placeholder="Ajouter une nouvelle tâche">
+    <button onclick="ajouterTache()">Ajouter</button>
+
+    <script>
+        function ajouterTache() {
+            var nouvelleTache = document.getElementById("nouvelle-tache").value;
+            if (nouvelleTache !== "") {
+                var listeTaches = document.getElementById("liste-taches");
+                var nouvelleTacheElement = document.createElement("li");
+                nouvelleTacheElement.textContent = nouvelleTache;
+                listeTaches.appendChild(nouvelleTacheElement);
+                document.getElementById("nouvelle-tache").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
