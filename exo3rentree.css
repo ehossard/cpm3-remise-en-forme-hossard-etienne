@@ -1,0 +1,42 @@
+/* Style de la liste de tâches */
+ul#liste-taches {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#liste-taches li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#liste-taches li:hover {
+    background-color: #e3e3e3;
+}
+
+/* Style du champ de texte */
+input#nouvelle-tache {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style du bouton "Ajouter" */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
