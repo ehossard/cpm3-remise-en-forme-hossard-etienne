@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice Simple</title>
+    <link rel="stylesheet" type="text/css" href="exo4rentree.css">
+</head>
+<body>
+    <h1>Calculatrice Simple</h1>
+    <div id="calculatrice">
+        <input type="text" id="affichage" disabled>
+        <br>
+        <button onclick="ajouterChiffre(7)">7</button>
+        <button onclick="ajouterChiffre(8)">8</button>
+        <button onclick="ajouterChiffre(9)">9</button>
+        <button onclick="ajouterOperation('+')">+</button>
+        <br>
+        <button onclick="ajouterChiffre(4)">4</button>
+        <button onclick="ajouterChiffre(5)">5</button>
+        <button onclick="ajouterChiffre(6)">6</button>
+        <button onclick="ajouterOperation('-')">-</button>
+        <br>
+        <button onclick="ajouterChiffre(1)">1</button>
+        <button onclick="ajouterChiffre(2)">2</button>
+        <button onclick="ajouterChiffre(3)">3</button>
+        <button onclick="ajouterOperation('*')">*</button>
+        <br>
+        <button onclick="effacer()">C</button>
+        <button onclick="ajouterChiffre(0)">0</button>
+        <button onclick="calculer()">=</button>
+        <button onclick="ajouterOperation('/')">/</button>
+        <br>
+    </div>
+</body>
+</html>
